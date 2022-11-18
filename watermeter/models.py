@@ -12,7 +12,7 @@ class Admin(models.Model):
 class Employer(models.Model):
     firstname = models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
-    National_id = models.IntegerField(max_length=255)
+    National_id = models.IntegerField()
     email = models.CharField(max_length=255)
     gender = models.CharField(max_length=255,default="male")
     job_title = models.CharField(max_length=255)
@@ -27,7 +27,7 @@ class Customer(models.Model):
     names = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
     gender = models.CharField(max_length=255,default="male")
-    National_id = models.IntegerField(max_length=255)
+    National_id = models.IntegerField()
     phonenumber = models.CharField(max_length=255, default="947587986")
 
 class Bill(models.Model):
